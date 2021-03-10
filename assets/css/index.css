@@ -88,11 +88,31 @@ body {
          }
 
         .about-me {
-            padding: 50px;
+            border-top: 3px solid;
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            color: rgb(2, 1, 2)
+            
+
+
+        }
+
+        
+
+        .aboutme-photo {
+            padding-top: 20px;
+            
+
         }
          
+        .paragraph {
+            padding-top: 20px;
+        }
 
         .intro {
             
             padding: 50px;
         }
+
+       
