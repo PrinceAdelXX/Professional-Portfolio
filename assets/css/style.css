@@ -93,10 +93,9 @@ body {
             flex-direction: column;
             padding: 40px;
             color: rgb(2, 1, 2)
-            
+            }
 
-
-        }
+           
             
 
          
@@ -113,6 +112,7 @@ body {
           .portfolio .container {
             display: flex;
             margin-right: 10%;
+            padding-right: 100px;
           }
           .portfolio .container .portfolio-left {
             flex: 1;
@@ -208,3 +208,7 @@ body {
           .portfolio .container .portfolio-right .portfolio-items a:hover {
             filter: blur(0);
             opacity: 1;
+          }
+            .portfolio-items {
+                flex: 35%;
+            }
