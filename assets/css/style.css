@@ -169,7 +169,7 @@ body {
             flex: 45%;
             margin: 5px;
             width: 45%;
-            height: 220px;
+            height: 280px;
             background-color: #99ccff;
             border-radius: 10px;
             overflow: hidden;
@@ -198,7 +198,7 @@ body {
             font-size: 14px;
             font-weight: normal;
           }
-          .portfolio .portfolio .portfolio-right .work-items a {
+          .portfolio .portfolio .portfolio-right .portfolio-items a {
             filter: blur(3px);
             opacity: 0.7;
           }
@@ -209,6 +209,121 @@ body {
             filter: blur(0);
             opacity: 1;
           }
-            .portfolio-items {
-                flex: 35%;
+            
+          footer {
+            /* margin: 20px; */
+            /*padding: 20px ; */
+            font-size: 20px;
+            background-color: black;
+        }
+
+        footer .container {
+          display: flex;
+          padding: 15px;
+      }
+          
+      footer .container .contact-l {
+        flex: 1;
+        font-size: 30px;
+        color: rgb(175, 179, 171);
+        padding: 20px;
+    }
+
+          footer .container .contact-r {
+            flex: 3;
+            padding: 30px;
+            height: 100px;
+          }
+
+          footer .container .contact-r ul {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+          }
+
+          footer .container .contact-right ul li {
+            color:rgb(207, 197, 7); 
+            margin-right: 20px;
+            font-size: 24px;
+            line-height: 45px;
+            text-align: center;
+            font-weight: bolder;
+          }
+
+          footer .container .contact-r ul li a {
+            flex: 1;
+            color: rgb(175, 179, 171);
+            display: inline-block;
+            border-bottom: 3px solid rgb(0, 0, 0);
+        }
+          footer .container .contact-r ul li a:hover {
+            background: rgb(39, 109, 66);
+            color: rgb(0, 0, 0);
+            border-radius: 15px ;
+          }
+
+        
+
+         /* MEDIA QUERY FOR TABLETS AND SMALLER */
+            @media screen and (max-width: 968px) 
+            {
+              header nav ul li {
+              display: flex;
+              flex-direction: column;
+              flex-wrap: wrap;
             }
+
+            footer .container .contact-r ul {
+              flex: 1;
+              padding: 20px;
+            }
+          }
+      
+          /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+              @media screen and (max-width: 776px) 
+              {
+                header h1{
+                  padding: 15px;
+              }
+
+
+                header nav ul li a {
+                  display: flex;
+                  margin : 0;
+                  padding : 10px;
+                  
+                }
+
+                .portfolio .container .portfolio-right .portfolio-top {
+                  max-width: 380px;
+                }
+
+                footer .container
+                {
+                  display: flex;
+                  padding: 15px;
+                }
+
+                footer .container .contact-l {
+                padding: 20px;
+                }
+
+                footer .container .contact-r {
+                  flex: 2;
+                  padding: 10px;
+                  margin: 0;
+                }
+                 
+                @media screen and (max-width: 375px) 
+                {
+                  header {
+                    margin: 0;
+                    max-width: 460px;
+                    justify-content: space-between;
+                    padding: 20px 35px;
+                    flex: 1;
+
+                  }
+
+                  
